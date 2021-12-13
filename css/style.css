@@ -112,7 +112,7 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #41228e;
+  background: #191919;
   color: #fff;
 }
 
@@ -131,12 +131,12 @@ h6, .h6 {
 
 .btn-transparent {
   background: transparent;
-  color: #41228e;
+  color: #191919;
   font-weight: bold;
 }
 
 .btn-transparent:active, .btn-transparent:hover {
-  color: #41228e;
+  color: #191919;
 }
 
 body {
@@ -199,11 +199,11 @@ select:focus {
 }
 
 a.text-dark:hover {
-  color: #41228e !important;
+  color: #191919 !important;
 }
 
 a:hover {
-  color: #41228e;
+  color: #191919;
 }
 
 .slick-slide {
@@ -251,7 +251,7 @@ a:hover {
 }
 
 .bg-primary {
-  background: #41228e !important;
+  background: #191919 !important;
 }
 
 .bg-gray {
@@ -259,7 +259,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #41228e !important;
+  color: #191919 !important;
 }
 
 .text-color {
@@ -396,7 +396,7 @@ a:hover {
 }
 
 .form-control:focus {
-  border-color: #41228e;
+  border-color: #191919;
   outline: 0;
   box-shadow: none !important;
 }
@@ -426,7 +426,7 @@ textarea.form-control {
 }
 
 .navigation.nav-bg {
-  background-color: #41228e;
+  background-color: #191919;
   padding: 15px 100px;
 }
 
@@ -439,8 +439,18 @@ textarea.form-control {
 @media (max-width: 991px) {
   .navigation {
     padding: 20px;
-    background: #41228e;
+    background: #191919;
   }
+}
+
+.logo-navbar{
+    height: 35px;
+    margin-right: 10px;
+}
+
+.logo-navbar.svg{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .navbar .nav-item .nav-link {
@@ -467,6 +477,11 @@ textarea.form-control {
     padding: 250px 0 150px;
     overflow: hidden;
   }
+
+  .logo-navbar{
+    margin-right: 5%;
+}
+
 }
 
 .hero-area h1 {
@@ -606,7 +621,7 @@ textarea.form-control {
 }
 
 .hover-bg-primary:hover {
-  background: #41228e;
+  background: #191919;
 }
 
 .hover-bg-primary:hover * {
@@ -615,7 +630,7 @@ textarea.form-control {
 
 .active-bg-primary {
   transition: .3s ease;
-  background: #41228e;
+  background: #191919;
 }
 
 .active-bg-primary * {
@@ -766,7 +781,7 @@ blockquote {
   display: inline-block;
   padding: 10px 20px;
   background: #eaeaea;
-  border-left: 2px solid #41228e;
+  border-left: 2px solid #191919;
   font-style: italic;
   font-size: 22px;
 }
