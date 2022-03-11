@@ -174,6 +174,19 @@ ul {
   margin: 0px;
 }
 
+iframe.previewmodel{
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100%;
+}
+
+.sicon{
+font-size: 150% !important;
+padding-right: 3rem ;
+
+}
 img {
   vertical-align: middle;
   border: 0;
@@ -426,7 +439,8 @@ textarea.form-control {
 }
 
 .navigation.nav-bg {
-  background-color: #191919;
+  background-color: rgba(0,0,0,0.3);
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.35) 54%, rgba(0,0,0,0) 100%);
   padding: 15px 100px;
 }
 
