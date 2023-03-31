@@ -77,7 +77,9 @@ h5, .h5 {
 h6, .h6 {
   font-size: 14px;
 }
-
+.ul-padding-btm{
+padding-bottom: 0.4rem;
+}
 /* Button style */
 .btn {
   font-size: 22px;
@@ -137,6 +139,10 @@ h6, .h6 {
 
 .btn-transparent:active, .btn-transparent:hover {
   color: #191919;
+}
+
+.btn-padding-btm{
+  padding-bottom: 1.2em;
 }
 
 body {
@@ -514,23 +520,23 @@ textarea.form-control {
 }
 
 #l2 {
-  top: 190px;
-  left: -250px;
+  bottom: 0px;
+  right: 15%;
 }
 
 #l3 {
-  top: 200px;
-  left: 40%;
+  top: -35px;
+  left: 51%;
 }
 
 #l4 {
-  top: 200px;
-  right: 40%;
+  top: -10px;
+  right: 60%;
 }
 
 #l5 {
-  top: 100px;
-  right: -150px;
+  top: 110px;
+  right: -90px;
 }
 
 #l6 {
@@ -540,7 +546,7 @@ textarea.form-control {
 
 #l7 {
   bottom: 100px;
-  left: 20%;
+  left: 2%;
 }
 
 #l8 {
@@ -549,9 +555,11 @@ textarea.form-control {
 }
 
 #l9 {
-  bottom: 100px;
-  right: -10px;
+  bottom: 0px;
+  right: 15%;
 }
+
+
 
 .layer-bg {
   position: absolute;
