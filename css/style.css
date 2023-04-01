@@ -1,8 +1,8 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
-PROJECT:	Project Name
-VERSION:	Versoin Number
+PROJECT:	Arnuuls Portfolio
+VERSION:	2.0.0
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
@@ -145,6 +145,10 @@ padding-bottom: 0.4rem;
   padding-bottom: 1.2em;
 }
 
+.btn-line-btm{
+   line-bottom: 1.5!important;
+}
+
 body {
   background-color: #fff;
   overflow-x: hidden;
@@ -238,7 +242,9 @@ a:hover {
   margin-bottom: 80px;
   font-family: "BwNistaInt-xBd";
 }
-
+.section-about{
+    padding-top: 8rem;
+}
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -785,6 +791,19 @@ textarea.form-control {
   left: 0;
   top: 0;
   z-index: -1;
+}
+.text-fotter{
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 2;
+}
+.container-fotter{
+  max-width: 17%;
+}
+.container-fotter img{
+  max-height:100%;
+  max-width: 100%;
 }
 
 /* /footer */
