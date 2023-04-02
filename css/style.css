@@ -143,7 +143,10 @@ padding-bottom: 0.4rem;
 
 .btn-padding-btm{
   padding-bottom: 1.2em;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
 
 .btn-line-btm{
    line-bottom: 1.5!important;
@@ -718,6 +721,27 @@ textarea.form-control {
   text-align: center;
 }
 
+.swft-used img {
+  margin-right:0.45rem;
+  margin-bottom:0px!important;
+}
+.swft-used i {
+  margin-right:1.5rem;
+  margin-top:0.4rem;
+  margin-bottom:0px!important;
+}
+.swft-used div, button {
+  margin-bottom:0px!important;
+}
+
+.swft-used button #text {
+   text-align: inherit;
+}
+
+.s-sktchfab {
+    max-height: 25rem;
+}
+
 /* /portfolio */
 /* testimonial */
 .testimonial-content strong {
@@ -740,14 +764,14 @@ textarea.form-control {
 
 .testimonial-bg-shapes .bg-shape-1 {
   position: absolute;
-  left: 100px;
-  top: -50px;
+  left: -20rem;
+  top: -12rem;
 }
 
 .testimonial-bg-shapes .bg-shape-2 {
   position: absolute;
-  right: 150px;
-  top: 50px;
+  right: -15rem;
+  top: 30rem;
 }
 
 .testimonial-bg-shapes .bg-shape-3 {
