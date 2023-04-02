@@ -146,7 +146,9 @@ padding-bottom: 0.4rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
-
+.btn-padding-top{
+padding-top: 3.5em;
+}
 
 .btn-line-btm{
    line-bottom: 1.5!important;
@@ -822,10 +824,31 @@ textarea.form-control {
   padding-right: 2rem;
   line-height: 2;
 }
+.container-portfolio{
+  max-width:400px!important;
+}
+.container-portfolio img{
+  max-height:100%;
+  max-width: 100%;
+}
+
 .container-fotter{
   max-width: 17%;
 }
 .container-fotter img{
+  max-height:100%;
+  max-width: 100%;
+}
+
+.container-pdf iframe{
+  width: 100%; 
+  height: 48.25rem;
+}
+
+.container-memoria{
+  max-width:715px!important;
+}
+.container-memoria img{
   max-height:100%;
   max-width: 100%;
 }
