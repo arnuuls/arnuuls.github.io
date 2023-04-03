@@ -614,8 +614,26 @@ textarea.form-control {
   height: auto;
 }
 
-.pattern-index-bg{
-  background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/index_pattern_bg.png');
+.pattern-red-bg{
+  background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/index_red-pattern_bg.png');
+  width:100%;
+  height: 100%;
+  color: #191919;
+}
+.pattern-blue-bg{
+  background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/index_blue-pattern_bg.png');
+  width:100%;
+  height: auto;
+  color: #191919;
+}
+.pattern-green-bg{
+  background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/index_green-pattern_bg.png');
+  width:100%;
+  height: auto;
+  color: #191919;
+}
+.pattern-pink-bg{
+  background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/index_pink-pattern_bg.png');
   width:100%;
   height: auto;
   color: #191919;
