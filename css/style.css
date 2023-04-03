@@ -416,7 +416,43 @@ a:hover {
   border: 0;
 }
 
+.slider-resize-img img{
+  width: 55%; /* Will shrink image to 30% of its original width */
+  height: auto;    
+  margin:0 auto;
+}
+.slider-resize-08 img{
+  width: 85%; /* portfolio-08.html */
+  height: auto;    
+  margin:0 auto;
+}
+.slider-black-dots li.slick-active button{
+  background: #191919;
+}
+.slider-black-dots li button{
+  background: rgba(0, 0, 0, 0.7);
+}
+.slider-transparent{
+  background: transparent;
+}
+
+
 /* /slick slider */
+/* banner */
+.banner-resize img{
+  width: 100%; /* Will shrink image to 30% of its original width */
+  height: auto;    
+  margin:0 auto;
+  padding-left:2%;
+  padding-right:2%;
+}
+.banner-fullresize img{
+  width: 100%; /* Will shrink image to 30% of its original width */
+  height: auto;    
+  margin:0 auto;
+}
+
+/* /banner */
 /* form */
 .form-control {
   border: 0;
