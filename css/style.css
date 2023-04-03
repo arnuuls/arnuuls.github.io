@@ -607,14 +607,15 @@ textarea.form-control {
 }
 
 
-
 .layer-bg {
   position: absolute;
   bottom: 0;
   left: 0;
+  height: auto;
 }
+
 .pattern-index-bg{
-  background: url('/arnuuls.github.io/images/illustrations/index_pattern_bg.png');
+  background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/index_pattern_bg.png');
   width:100%;
   height: auto;
   color: #191919;
