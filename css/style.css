@@ -881,7 +881,7 @@ textarea.form-control {
 .text-fotter{
   margin: auto;
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 5rem;
   line-height: 2;
 }
 .container-portfolio{
@@ -898,6 +898,11 @@ textarea.form-control {
 .container-fotter img{
   max-height:100%;
   max-width: 100%;
+}
+
+@media (max-width: 991px) {
+.container-fotter {
+    max-width: 100%;
 }
 
 .container-pdf iframe{
