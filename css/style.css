@@ -142,7 +142,7 @@ padding-bottom: 0.4rem;
 }
 
 .btn-padding-btm{
-  padding-bottom: 1.2em;
+  padding-bottom: 1.5em;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -456,11 +456,15 @@ a:hover {
 .page-sec-title-alt {
   padding-top: 350px;
 }
+.carousel-item {
+  height: 68vh;
+  min-height: 350px;
+  width: 100%!important;
+}
 
 .bg-shape-page-title{
-  background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/index_red-pattern_bg.png');
-  width:100%;
-  height: 100%;
+  background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/page-title.png');
+  background-size: cover;
 }
 /* /secondary title */
 /* /banner */
@@ -636,6 +640,7 @@ textarea.form-control {
   background: url('https://raw.githubusercontent.com/arnuuls/arnuuls.github.io/main/images/illustrations/index_blue-pattern_bg.png');
   width:100%;
   height: auto;
+  z-index: 0;
   color: #191919;
 }
 .pattern-green-bg{
@@ -816,6 +821,122 @@ textarea.form-control {
     max-height: 25rem;
 }
 
+.portfolio-content strong {
+  color: #2bfdff;
+  font-weight: normal;
+}
+.portfolio-bg-shapes .section-title{
+    position: relative;
+    z-index: 2;
+}
+.portfolio-bg-shapes .container {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-bg-shapes .bg-map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.portfolio-bg-shapes .bg-shape-1 {
+  position: absolute;
+  left: -20rem;
+  top: -12rem;
+}
+
+.portfolio-bg-shapes .bg-shape-2 {
+    position: absolute;
+    top: 41rem;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 324px;
+}
+
+.portfolio-bg-shapes .bg-shape-3 {
+  position: absolute;
+  right: 50px;
+  top: 200px;
+}
+
+.portfolio-bg-shapes .bg-shape-4 {
+  position: absolute;
+  -webkit-transform: scaleX(-1) scaleY(-1);
+          transform: scaleX(-1) scaleY(-1);
+  left: 1%;
+  bottom: 100px;
+}
+
+.portfolio-bg-shapes .bg-shape-5 {
+  position: absolute;
+  right: 1%;
+  bottom: -10px;
+}
+
+.portfolio-bg-shapes .bg-shape-6 {
+  position: absolute;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  left: 15%;
+  bottom: -30px;
+}
+
+.portfolio-bg-shapes .bg-shape-7 {
+  position: absolute;
+  -webkit-transform: scaleX(-1) scaleY(-1);
+          transform: scaleX(-1) scaleY(-1);
+  left: 26rem;
+  top: -3rem;
+}
+
+.mx-height-banner{
+    max-width: 100%; 
+    max-height: 42rem;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .portfolio-bg-shapes .bg-shape-2{
+        top: 85%;
+    }
+    .portfolio-bg-shapes .bg-shape-6{
+        display: none;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .mx-height-banner {
+        padding-top: 200px;
+    }
+    .portfolio-bg-shapes .bg-shape-2{
+        -webkit-transform: scaleX(-1) scaleY(-1);
+                transform: scaleX(-1) scaleY(-1);
+        top: 80%;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 324px;
+    }
+    .portfolio-bg-shapes .bg-shape-3{
+        margin-top: 200px;
+        top:35%;
+    }
+    .portfolio-bg-shapes .bg-shape-4, .bg-shape-5 {
+        display: none;
+    }
+    .portfolio-bg-shapes .bg-shape-7{
+        margin-top: 200px;
+        left: 5%;
+    }
+}
+
 /* /portfolio */
 /* testimonial */
 .testimonial-content strong {
@@ -913,8 +1034,9 @@ textarea.form-control {
 }
 
 @media (max-width: 991px) {
-.container-fotter {
-    max-width: 100%;
+    .container-fotter {
+        max-width: 100%;
+    }
 }
 
 .container-pdf iframe{
@@ -986,11 +1108,23 @@ blockquote {
   position: relative;
   z-index: 1;
 }
+.page-title-alt .bg-shape-8 {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  object-fit: contain;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
 
 .page-title-alt .bg-shape-1 {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0; 
+  object-fit: contain;
+  object-position: center center;
+  width: 100%;
   height: 100%;
 }
 
@@ -1023,9 +1157,75 @@ blockquote {
 .page-title-alt .bg-shape-6 {
   position: absolute;
   bottom: 100px;
-  right: -100px;
+  right: 100px;
 }
 
+.page-title-alt .bg-shape-7 {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+.page-title-alt .bg-shape-8 {
+  position: absolute;
+}
+.about-social p{
+    margin: 0!important;
+    font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .about-social p{
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .page-title-alt .bg-shape-1 {
+    margin-top: 10%;
+  }
+  .page-title-alt .bg-shape-3 {
+    margin-top: 200px;
+  }
+  .page-title-alt .layer-bg img{
+        display: none;
+  }
+  .page-title-alt .pattern-blue-bg{
+  position: absolute;
+  top: 0;
+  left: 0; 
+  object-fit: contain;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+  }
+  .page-title-alt h1{
+  text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-title-alt .bg-shape-1 {
+    margin-top: 15%;
+  }
+  .page-title-alt .bg-shape-4{
+  margin-top: 200px;
+    top: 1%;
+    left: 1%;
+  }
+  .page-title-alt .bg-shape-6{
+    bottom: -1.5rem;
+    right: 2%;
+  }
+    .about-social p{
+    display: revert;
+  }
+  .about-social i{
+    display: none;
+  }
+}
+@media (max-width: 569px) {
+  .page-title-alt .bg-shape-1 {
+    margin-top: 25%;
+  }
+}
 .page-title {
   padding: 250px 0 150px;
 }
