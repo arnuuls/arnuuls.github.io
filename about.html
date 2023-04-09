@@ -38,15 +38,15 @@
     </button>
     <!-- navbar social media -->
      <ul class="list-unstyled mt-3 ml-5 mr-5 position-relative zindex-1">
-        <li class="mb-3"><a class="text-white sicon" href="https://www.instagram.com/arnuuuls/"><i class="ti-instagram"></i></a></li>
+        <li class="mb-3"><a class="social-icon-navbar sicon" href="https://www.instagram.com/arnuuuls/"><i class="ti-instagram"></i></a></li>
         <li class="mb-3">
-            <a class="text-white social-icon-navbar sicon" href="https://www.artstation.com/arnuuls">
-                <img src="images/social/artstation.png" alt="Artstation">
+            <a class="social-icon-navbar sicon" href="https://www.artstation.com/arnuuls">
+                <img src="images/social/artstation.svg" alt="Artstation">
             </a>
         </li>
         <li class="mb-3">
-            <a class="text-white social-icon-navbar sicon" href="https://sketchfab.com/arnuuls">
-                <img src="images/social/sketchfab.png" alt="Sketchfab">
+            <a class="social-icon-navbar sicon" href="https://sketchfab.com/arnuuls">
+                <img src="images/social/sketchfab.svg" alt="Sketchfab" style="max-height:27px">
             </a>
         </li>
      </ul>
@@ -104,7 +104,7 @@
 <section class="section pt-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 font-secondary paragraph-lg text-dark">
+      <div class="col-md-8 about-info font-secondary paragraph-lg text-dark">
         <p class="font-secondary paragraph-lg text-dark">Mi nombre es Arnau Morilla González; y he adquirido más de 5 años de formación, He estado en grandes centros formativos, cómo CIC Elisava y CEV Barcelona.</p>
         <p class="font-secondary paragraph-lg text-dark"> He podido desarrollarme en Sectores de: </p>
         <ul>
@@ -123,39 +123,38 @@
         <div class="shadow-down mb-4">
           <img src="images/about/author.jpg" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
-            <h4 class="btn-padding-btm">Arnau Morilla González</h4>
-            <img src="images/about/signature.png" alt="signature" class="img-fluid btn-padding-btm">
-            <div class="btn-padding-btm">         
-                <button onclick="window.location.href='images/about/CV-2023_24-AMorilla.pdf';" class="btn btn-xs btn-primary w-100 text-center">
-                    Download CV
-                </button>
-            </div>
+          <h4 class="btn-padding-btm">Arnau Morilla González</h4>
+          <img src="images/about/signature.png" alt="signature" class="img-fluid btn-padding-btm">
             
           <div class="container about-social">
             <div class="row">
-              <div class="col-lg-6 col-md-6 pb-sm-4">
+              <div class="col-lg-12 col-md-12 pb-4">         
+                <button onclick="window.location.href='images/about/CV-2023_24-AMorilla.pdf';" class="btn btn-xs btn-primary w-100 text-center">
+                    Download CV
+                </button>
+              </div>
+              <div class="col-lg-6 col-md-6 pb-4">
                 <button onclick="window.location.href='https://www.linkedin.com/in/arnau-morilla-gonzalez-bab173228/';" class="btn btn-xs btn-primary w-100 pl-sm-1 pr-sm-1">
 		        <div class="container">
                   <div class="row">
-                    <i class="col ti-linkedin sicon pl-sm-2 pr-sm-2"></i>
+                    <i class="col ti-linkedin sicon pl-sm-6 pr-sm-6 pr-lg-6 pr-xl-0"></i>
                     <p class="col text-center text-white font-secondary">Linkedin</p>
                   </div>
                 </div>
 	            </button>
               </div>
               <div class="col-lg-6 col-md-6 pb-sm-4">
-                <button onclick="window.location.href='https://www.infojobs.net/arnau-morilla.prf';" class="btn btn-xs btn-primary w-100 pl-sm-1 pr-sm-1">
+                <button onclick="window.location.href='https://www.infojobs.net/arnau-morilla.prf';" class="btn btn-xs btn-primary social-icon-navbar swft-used w-100 pl-sm-1 pr-sm-1">
 		        <div class="container">
                   <div class="row">
-                    <i class="col ti-linkedin sicon pl-sm-2 pr-sm-2"></i>
-                    <p class="col text-center text-white font-secondary">InfoJobs</p>
+                    <img src="images/social/infojobs.svg" alt="infojobs" class="col align-items-md-end pl-sm-6 pr-sm-6 pr-lg-6 pr-xl-0">
+                    <p class="col align-items-md-start text-center text-white font-secondary">InfoJobs</p>
                   </div>
                 </div>
 	            </button>
               </div>
             </div>
           </div>
-  
       </div>
     </div>
   </div>
@@ -196,49 +195,79 @@
 
 <!-- footer -->
 <footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="container-fotter">
-            <img src="images/Logotype.png" alt="Myself">
-        </div>
-        <div class="col-md-4">
-            <div>
-                <h5 class="text-light">About</h5>
-                <ul class="row">
-	                <li><i class="text-white ti-email sicon d-inline-block"></i><a href="#" class="text-white text-fotter paragraph-lg font-secondary">arnuuls@gmail.com</a></li>
-                    <li><i class="text-white ti-location-pin sicon d-inline-block"></i><a href="#" class="text-white text-fotter paragraph-lg font-secondary">Barcelona, SPAIN</a></li>
-                    <li><i class="text-white ti-layout-list-thumb sicon d-inline-block"></i><a href="#" class="text-white text-fotter paragraph-lg font-secondary">Curriculum</a></li>                    
-	            </ul>
+	<div class="section">
+		<div class="container container-fotter">
+		<div class="row row-cols-1 row-cols-lg-1 row-cols-md-3 align-items-center">
+			<!-- Logo-->
+			<div class="col-lg-4"><!-- container-fotter-logo -->
+                <div class="container-fotter-logo">
+				    <img src="images/Logotype.png" alt="Myself">
+			    </div>
             </div>
-        </div>
+			<!-- /Logo-->
+			<!-- Info-->
+			<div class="col align-self-stretch">
+				<div class="col-12 w-100">
+					<h5 class="text-light">About</h5>
+				</div>
+				<div class="d-flex flex-lg-row flex-column">
+					<ul class="w-100 about-link">
+					  <!-- AboutInfo -->
+					  <li class="mr-sm-4 rounded" onclick="window.location.href='mailto:webmaster@example.com';" style="cursor:pointer;">
+						<i class="ti-email sicon d-inline-block"></i>
+						<p class="paragraph-lg font-secondary">arnuuls@gmail.com</p>
+					  </li>
 
-        <div class="col-md-4">
-            <h5 class="text-light">Social Media</h5>
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <a href="" class="btn btn-xs btn-primary w-100"><i class="ti-instagram sicon d-inline-block"></i></a>
-                </div>
-                                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <a href="" class="btn btn-xs btn-primary w-100"><i class="ti-view-grid sicon d-inline-block"></i></a>
-                </div>
-                                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <a href="" class="btn btn-xs btn-primary w-100"><i class="ti-linkedin sicon d-inline-block"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
+					  <li class="mr-sm-4 rounded" onclick="window.location.href='https://goo.gl/maps/GN8hmWBoididCXGa7';" style="cursor:pointer;">
+						<i class="ti-location-pin sicon d-inline-block"></i>
+						<p class="paragraph-lg font-secondary">Barcelona, SPAIN</p>
+					  </li>
+
+					  <li class="mr-sm-4 rounded" onclick="window.location.href='images/about/CV-2023_24-AMorilla.pdf';" style="cursor:pointer;">
+                        <i class="ti-layout-list-thumb sicon d-inline-block"></i>
+						<p class="paragraph-lg font-secondary">Curriculum</p>
+					  </li>
+					  <!-- /AboutInfo -->
+					</ul>
+				</div>
+			</div>
+			<!-- /Info-->
+			<!-- Social -->
+			<div class="col align-self-stretch">
+				<div class="col-12 w-100">
+					<h5 class="text-light">Social Media</h5> 
+				</div>                
+				<div class="d-flex flex-lg-row flex-column content-social mb-xl-5 mt-3">
+					<div class="pr-sm-4 mb-2 mb-xl-0 w-100">
+						<button onclick="window.location.href='https://www.instagram.com/arnuuuls/';" class="btn btn-xs btn-primary swft-used w-100">
+							<i class="ti-instagram sicon"></i>
+							<p class="text-white">instagram</p>
+						</button>
+					</div>
+					<div class="pr-sm-4 mb-2 mb-xl-0 w-100">
+						<button onclick="window.location.href='https://www.artstation.com/arnuuls';" class="btn btn-xs btn-primary social-icon-navbar swft-used w-100">
+							<img src="images/social/artstation.svg" alt="Artstation">
+							<p class="text-white">artstation</p>
+						</button>
+					</div>
+					<div class="pr-sm-4 mb-2 mb-xl-0 w-100">
+						<button onclick="window.location.href='https://sketchfab.com/arnuuls';" class="btn btn-xs btn-primary social-icon-navbar swft-used w-100">
+							<img src="images/social/sketchfab.svg" alt="Sketchfab">
+							<p class="text-white">sketchfab</p>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /Social -->
+		</div>
+		</div>
+	</div>
+	<div class="border-top text-center border-dark py-5">
     <p class="mb-0 text-light">Copyright ©<script>
         var CurrentYear = new Date().getFullYear()
         document.write(CurrentYear)
-      </script> repository on <a href="https://github.com/arnuuls/arnuuls.github.io">GitHub</a></p>
-  </div>
+      </script>2023 repository on <a href="https://github.com/arnuuls/arnuuls.github.io">GitHub</a></p>
+	</div>
 </footer>
 <!-- /footer -->
 
