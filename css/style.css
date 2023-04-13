@@ -1202,6 +1202,10 @@ blockquote {
   padding: 350px 0 70px;
 }
 
+.page-404 {
+  padding: 11rem 0 70px!important;
+}
+
 .border-thick {
   border: 10px solid;
 }
