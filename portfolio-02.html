@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="zxx" data-theme="light">
 
 <head>
   <meta charset="utf-8">
-  <title>Arnuuls | Portfolio</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Arnuuls | Himiko Toga </title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arnuuls">
+  <meta property="og:description" content="Portfolio · Main Page">
+  <meta property="og:url" content="https://arnuuls.github.io/">
+  <meta property="og:url" content="http://arnuuls.github.io">
+  <meta property="og:image" content="https://arnuuls.github.io/images/Logotype_Black.png">
+  <meta property="og:image:width" content="240">
+  <meta property="og:image:height" content="240">
+  <!-- Switcher Theme -->
+  <script>
+	//Check local storage
+	let localS = localStorage.getItem('theme'),
+		themeToSet = localS
+		
+	//If local storage is not set, we check OS preferences
+	if (!localS){
+		themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+	}
+	
+	// Set the correct theme
+	document.documentElement.setAttribute('data-theme', themeToSet)
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P6TNBQH');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="robots" content="max-image-preview:large">
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -19,21 +49,24 @@
 
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/color_typing.css" rel="stylesheet">
   
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
 
 </head>
 
 <body>
-  
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6TNBQH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->  
 
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="index.html"><img src="images/Logotype.png" style="heigh:96px; width:96px;"alt="Myself"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html"><img src="images/Logotype.png" style="heigh:96px; width:96px;" alt="Myself"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="true" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- navbar social media -->
@@ -55,22 +88,49 @@
         </li>
      </ul>
     <!-- /navbar social media -->
-    <div class="collapse navbar-collapse text-center" id="navigation">
+    <div class="navbar-collapse text-center collapse show" id="navigation" style="">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">
-            <img src="images\icons\nav_home.svg" class="logo-navbar" alt="icon-home">Home
+            <div class="nav-home-icon nav-icons d-inline-block align-middle">
+				<svg style="enable-background:new 0 0 96 96" viewBox="0 0 96 96" id="icon-home" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+					<path d="M17.97 54.4c0-2.63-.89-3.51-3.55-3.51h-2.99c-1.34 0-2.33-.6-2.86-1.81-.55-1.26-.27-2.42.69-3.39 1.44-1.46 2.9-2.9 4.35-4.36C24.23 30.71 34.84 20.09 45.46 9.47c1.84-1.84 3.38-1.85 5.21-.03C62.6 21.37 74.52 33.3 86.46 45.22c.99.99 1.7 2.03 1.26 3.5-.38 1.28-1.45 2.13-2.78 2.16-1.23.03-2.46 0-3.7.01-1.99.01-3.05 1.06-3.05 3.04V74h5.28V56.16c.59 0 1.08.01 1.57 0 1.44-.02 2.76-.43 4.01-1.14 4.71-2.64 5.21-9.54 1.46-13.25-12.11-11.98-24.18-24-36.13-36.15-3.35-3.41-9.34-3.42-12.63.02-6.37 6.65-12.98 13.06-19.49 19.57-5.56 5.56-11.13 11.1-16.67 16.68-2.58 2.61-3.26 5.71-1.93 9.14 1.25 3.21 4.27 5.12 7.89 5.14h1.14V74h5.29c.02-6.53-.01-13.07-.01-19.6z" id="home_path"></path>
+				</svg>
+			</div>
+			Home
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="portfolio.html">
-          <img src="images\icons\nav_portfolio.svg" class="logo-navbar" alt="icon-portfolio">Portfolio
+			<div class="nav-portfolio-icon nav-icons d-inline-block align-middle">
+				<svg style="enable-background:new 0 0 96 96" viewBox="0 0 96 96" id="icon-portfolio" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+					<path d="M22.6 39.73c1.81 0 3.63-.01 5.44 0 1.69.01 2.8 1.02 2.81 2.7.04 3.72.04 7.43 0 11.15-.02 1.68-1.12 2.69-2.81 2.7-3.66.01-7.31.01-10.97 0-1.65-.01-2.77-1.08-2.78-2.74-.03-3.69-.03-7.37 0-11.06.01-1.66 1.12-2.73 2.78-2.74 1.84-.03 3.69-.01 5.53-.01zm2.93 11.24v-5.91h-5.91v5.91h5.91zM78.85 39.73c2.01 0 3.31 1.65 2.71 3.44-.36 1.08-1.16 1.65-2.27 1.81-.2.03-26.45.02-39.37.02-1.66 0-2.8-.87-3-2.25-.23-1.66.97-3.01 2.73-3.02 4.66-.01 32.69-.01 39.2 0zM79.11 51.01c1.48.09 2.63 1.28 2.6 2.68-.03 1.44-1.17 2.57-2.69 2.58-2.9.02-29.03.01-39.19.01-1.64 0-2.77-.91-2.91-2.32-.17-1.67 1.03-2.94 2.83-2.95 4.77-.02 39.1-.02 39.36 0zM77.81 62.49c2.22.09 3.94 1.28 3.9 2.68-.05 1.44-1.76 2.57-4.03 2.58-4.35.02-43.53.01-58.77.01-2.46 0-4.15-.91-4.37-2.32-.26-1.67 1.55-2.94 4.24-2.95 7.16-.02 58.64-.02 59.03 0zM48.02 19.56c-6.44 0-12.89.01-19.33-.01-.54 0-1.12-.08-1.62-.28-1.01-.42-1.55-1.48-1.45-2.58.1-1.09.83-1.99 1.91-2.26.42-.11.87-.13 1.3-.13 12.77-.01 25.54-.01 38.3 0 .32 0 .65-.01.96.04 1.43.23 2.36 1.37 2.28 2.77-.08 1.39-1.15 2.43-2.6 2.45-1.96.03-3.92.01-5.89.01-4.61-.01-9.24-.01-13.86-.01z" id="portfolio_path"></path>	
+					<path d="M8.27 31.79v-.89h79.45V71.35c0 1.46 1.18 2.64 2.64 2.64 1.46 0 2.64-1.18 2.64-2.64V11.44c-.28-.88-.47-1.8-.85-2.64-1.42-3.11-3.83-5-7.2-5.64-.14-.03-.26-.1-.39-.16H11.44c-1.27.48-2.63.81-3.79 1.48-2.48 1.43-3.93 3.67-4.48 6.48-.04.16-.11.32-.17.48v59.93C3 72.82 4.18 74 5.64 74c1.46 0 2.64-1.18 2.64-2.64-.01-13.19-.01-26.38-.01-39.57zm.05-19.51c.05-2.18 1.99-3.9 4.18-4 .29-.01.59-.01.88-.01h69.25c3.37 0 5.1 1.72 5.1 5.06v12.19H8.29c0-4.45-.07-8.85.03-13.24z" id="portfolio_extras"></path>
+				</svg>
+			</div>
+		  Portfolio
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="contact.html">
-            <img src="images\icons\nav_contact.svg" class="logo-navbar" alt="icon-contact">Contact
+            <div class="nav-about-icon nav-icons d-inline-block align-middle">
+				<svg style="enable-background:new 0 0 96 96" viewBox="0 0 96 96" id="icon-about" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+					<path d="M8.28 18.89v-1.18c.39.37.64.59.88.82C19.7 29.07 30.24 39.62 40.78 50.16c3.27 3.26 7.52 4.14 11.41 2.2 1.15-.57 2.22-1.43 3.14-2.34 10.51-10.45 20.98-20.94 31.45-31.43.24-.25.43-.55.65-.82.1.06.19.12.29.18V74H93V17.08c-.3-.94-.49-1.93-.93-2.81-1.79-3.64-4.76-5.56-8.82-5.62-5.15-.05-10.3 0-15.46 0H13.13c-4.92 0-8.77 2.91-9.85 7.5-.19.82-.26 1.68-.26 2.52C3 37.11 3 55.56 3.01 74h5.27c-.01-18.37 0-36.74 0-55.11zm75.59-4.91c-.28.31-.46.53-.66.72L51.47 46.44c-2.21 2.21-4.72 2.21-6.93 0C33.95 35.86 23.37 25.28 12.79 14.7c-.2-.2-.38-.41-.66-.72h71.74z" id="contact_path"></path>
+				</svg>
+			</div>
+			Contact
           </a>
+        </li>
+        <li class="nav-item switch-theme">
+		  <div id="swtheme-icon">
+			<svg width="35" height="35" viewBox="0 0 512.000000 512.000000" fill="none" id="icon-sun" sodipodi:docname="sun.svg" alt="icon-switcher-sun" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+			  <path d="M2360 4840 c-716 -75 -1318 -434 -1707 -1019 -185 -277 -307 -598 -359 -946 -24 -163 -25 -466 -1 -625 79 -519 293 -947 651 -1305 357 -357 794 -575 1306 -652 157 -23 462 -23 624 1 929 136 1672 801 1901 1700 52 207 69 343 69 566 0 223 -17 359 -69 566 -228 897 -978 1569 -1896 1699 -138 19 -402 27 -519 15z m232 -327 c17 -15 18 -38 18 -309 l0 -294 -25 -16 c-23 -15 -27 -15 -50 0 l-25 16 0 292 c0 257 2 294 17 310 20 22 41 23 65 1z m-1159 -761 c175 -175 198 -202 195 -227 -2 -19 -11 -31 -27 -37 -22 -8 -42 9 -233 199 -172 172 -208 212 -208 236 0 31 33 51 60 36 8 -4 104 -97 213 -207z m2509 206 c43 -35 37 -43 -184 -265 -117 -117 -219 -213 -227 -213 -20 0 -51 30 -51 49 0 18 419 441 436 441 6 0 17 -6 26 -12z m-1150 -348 c332 -72 619 -308 755 -621 175 -405 85 -877 -227 -1189 -420 -420 -1100 -420 -1520 0 -482 482 -400 1283 170 1658 244 161 532 214 822 152z m-1572 -1020 c25 -25 25 -35 0 -60 -19 -19 -33 -20 -307 -20 -252 0 -289 2 -305 17 -22 20 -23 41 -1 65 15 17 38 18 305 18 275 0 289 -1 308 -20z m3292 3 c22 -20 23 -41 1 -65 -15 -17 -38 -18 -309 -18 l-294 0 -16 25 c-15 23 -15 27 0 50 l16 25 292 0 c257 0 294 -2 310 -17z m-2890 -970 c10 -9 18 -23 18 -32 0 -9 -96 -112 -213 -229 -172 -171 -217 -211 -233 -206 -21 8 -44 32 -44 48 0 16 423 436 439 436 8 0 23 -7 33 -17z m2136 -196 c192 -193 212 -216 204 -237 -5 -13 -19 -27 -32 -32 -21 -8 -44 12 -237 204 -117 117 -213 219 -213 227 0 20 30 51 49 51 9 0 112 -96 229 -213z m-1170 -203 c22 -15 22 -17 22 -306 0 -257 -2 -294 -17 -310 -20 -22 -41 -23 -65 -1 -17 15 -18 38 -18 309 0 291 0 293 22 308 12 9 25 16 28 16 3 0 16 -7 28 -16z" id="sunbase_path" transform="matrix(0.1,0,0,-0.1,0,512)"></path>
+			  <path d="M2394 3204 c-127 -30 -266 -122 -357 -237 -93 -116 -137 -246 -137 -407 0 -195 55 -326 195 -465 100 -101 187 -152 305 -179 83 -20 237 -20 319 -1 231 55 434 258 486 486 19 87 19 231 0 318 -52 228 -255 431 -486 486 -80 18 -244 18 -325 -1z" id="Suncircle_path" transform="matrix(0.1,0,0,-0.1,0,512)"></path>
+			</svg>
+			<svg width="35" height="35" viewBox="0 0 512.000000 512.000000" fill="none" id="icon-moon" sodipodi:docname="moon.svg" alt="icon-switcher-moon" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+				<path d="M2360 4840 c-716 -75 -1322 -437 -1708 -1020 -185 -279 -306 -598 -358 -945 -24 -163 -25 -466 -1 -625 79 -519 293 -947 651 -1305 357 -357 794 -575 1306 -652 157 -23 462 -23 624 1 761 111 1392 567 1735 1254 159 318 235 644 235 1012 0 223 -17 359 -69 566 -228 897 -978 1569 -1896 1699 -138 19 -402 27 -519 15z m68 -402 c21 -21 13 -53 -31 -113 -418 -575 -459 -1334 -105 -1954 81 -142 158 -241 288 -371 177 -177 343 -290 568 -386 220 -94 419 -135 682 -140 102 -2 188 -3 192 -4 4 0 12 -9 18 -20 16 -29 -4 -60 -115 -177 -274 -291 -626 -484 -1029 -566 -98 -19 -141 -22 -356 -22 -227 1 -254 3 -371 27 -590 127 -1074 505 -1328 1038 -473 995 -2 2181 1024 2578 120 46 237 79 360 101 130 23 187 25 203 9z m1228 -450 c64 -128 117 -234 118 -235 0 0 114 -18 251 -38 138 -20 256 -42 263 -47 32 -27 12 -55 -170 -235 l-181 -180 40 -249 c36 -221 39 -252 27 -271 -8 -13 -19 -23 -25 -23 -6 0 -114 54 -240 121 l-229 120 -219 -115 c-120 -64 -230 -116 -245 -116 -49 0 -50 24 -2 290 l44 245 -184 178 c-190 185 -210 213 -164 237 14 7 473 80 506 80 2 0 51 98 109 217 58 119 113 225 122 235 9 10 27 18 40 18 20 0 37 -28 139 -232z" id="moon_path" transform="matrix(0.1,0,0,-0.1,0,512)" inkscape:label="Moon_path"></path>
+			</svg>
+		  </div>
         </li>
       </ul>
     </div>
@@ -87,13 +147,12 @@
     </div>
   </div>
   <!-- background shapes -->
-  <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
-  <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
-  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
-  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
-  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+		<img src="images/illustrations/page-title.png" alt="blob-bg" class="bg-shape-1">
+		<img src="images/illustrations/Blob_7.svg" alt="blob-bg" class="bg-shape-2">
+		<img src="images/illustrations/Blob_5.svg" alt="blob-bg" class="bg-shape-3">
+		<img src="images/illustrations/Blob_4.svg" alt="blob-bg" class="bg-shape-4">
+		<img src="images/illustrations/Blob_2.svg" alt="blob-bg" class="bg-shape-5">
+		<img src="images/illustrations/Blob_6.svg" alt="blob-bg" class="bg-shape-6">
 </section>
 <!-- /page title -->
 <!-- content description -->
@@ -230,7 +289,7 @@
 
 
 <!-- blog -->
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -277,7 +336,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /blog -->
 
 <!-- contact -->
@@ -314,49 +373,197 @@
 
 <!-- footer -->
 <footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="container-fotter">
-            <img src="images/Logotype.png" alt="Myself">
-        </div>
-        <div class="col-md-4">
-            <div>
-                <h5 class="text-light">About</h5>
-                <ul class="row">
-	                <li><i class="text-white ti-email sicon d-inline-block"></i><a href="#" class="text-white text-fotter paragraph-lg font-secondary">arnuuls@gmail.com</a></li>
-                    <li><i class="text-white ti-location-pin sicon d-inline-block"></i><a href="#" class="text-white text-fotter paragraph-lg font-secondary">Barcelona, SPAIN</a></li>
-                    <li><i class="text-white ti-layout-list-thumb sicon d-inline-block"></i><a href="#" class="text-white text-fotter paragraph-lg font-secondary">Curriculum</a></li>                    
-	            </ul>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <h5 class="text-light">Social Media</h5>
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <a href="" class="btn btn-xs btn-primary w-100"><i class="ti-instagram sicon d-inline-block"></i></a>
-                </div>
-                                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <a href="" class="btn btn-xs btn-primary w-100"><i class="ti-view-grid sicon d-inline-block"></i></a>
-                </div>
-                                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <a href="" class="btn btn-xs btn-primary w-100"><i class="ti-linkedin sicon d-inline-block"></i></a>
-                </div>
-            </div>
-            </div>
-        </div>
-        
+	<div class="section">
+		<div class="container container-fotter">
+		<div class="row row-cols-1 row-cols-lg-1 row-cols-md-3 align-items-center">
+			<!-- Logo -->
+			<div class="col-lg-4"><!-- container-fotter-logo -->
+        <div class="container-fotter-logo">
+				  <img src="images/Logotype.png" alt="Myself">
+									<!-- Script schema -->
+					<script type="application/ld+json">
+					{
+						"@context": "http://schema.org",
+						"@id": "https://arnuuls.github.io/#brand",
+						"@type": "Organization",
+						"address": {
+							"@type": "PostalAddress",
+							"addressLocality": "Barcelona, Spain",
+							"postalCode": "08302"
+						},
+						"name": "Arnuuls",
+						"slogan": "| Digital Artist",
+						"url": "https://arnuuls.github.io/",
+						"logo": "https://arnuuls.github.io/images/Logotype.png",
+						"founder": [
+							{
+								"@type": "Person",
+								"name": "Arnau Morilla",
+											"email":"arnuuls@gmail.com",
+											"birthDate": "2000-05-02",
+								"hasOccupation": {
+									"@type": "Occupation",
+									"name": "Digital Artist"
+								}
+							}
+						],
+						"contactPoint": [
+							{
+								"@type": "ContactPoint",
+								"telephone": "+34-627-947-647",
+								"contactType": "contact",
+								"areaServed": "ES",
+								"availableLanguage": ["EN", "ES"]
+							}
+						],
+						"sameAs": [
+							"https://www.artstation.com/arnuuls",
+							"https://www.instagram.com/arnuuls/",
+							"https://www.linkedin.com/in/arnau-morilla/",
+							"https://sketchfab.com/arnuuls"
+						]
+					}
+					</script>
+					<!-- /Script schema -->
+			  </div>
+				<!-- Script schema -->
+				<script type="application/ld+json">
+				{
+					"@context": "http://schema.org",
+					"@id": "https://arnuuls.github.io/#brand",
+					"@type": "Organization",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Barcelona, Spain",
+						"postalCode": "08302"
+					},
+					"name": "Arnuuls",
+					"slogan": "| Digital Artist",
+					"url": "https://arnuuls.github.io/",
+					"logo": "https://arnuuls.github.io/images/Logotype.png",
+					"founder": [
+						{
+							"@type": "Person",
+							"name": "Arnau Morilla",
+										"email":"arnuuls@gmail.com",
+										"birthDate": "2000-05-02",
+							"hasOccupation": {
+								"@type": "Occupation",
+								"name": "Digital Artist"
+							}
+						}
+					],
+					"contactPoint": [
+						{
+							"@type": "ContactPoint",
+							"telephone": "+34-627-947-647",
+							"contactType": "contact",
+							"areaServed": "ES",
+							"availableLanguage": ["EN", "ES"]
+						}
+					],
+					"sameAs": [
+						"https://www.artstation.com/arnuuls",
+						"https://www.instagram.com/arnuuls/",
+						"https://www.linkedin.com/in/arnau-morilla/",
+						"https://sketchfab.com/arnuuls"
+					]
+				}
+				</script>
+				<!-- /Script schema -->
       </div>
-    </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script> repository on <a href="https://github.com/arnuuls/arnuuls.github.io">GitHub</a></p>
-  </div>
+			<!-- /Logo -->
+			<!-- Info -->
+			<div class="col align-self-stretch">
+				<div class="col-12 w-100">
+					<h5 class="text-light">About</h5>
+				</div>
+				<div class="d-flex flex-lg-row flex-column">
+					<ul class="w-100 about-link">
+					  <!-- AboutInfo -->
+
+					  <li class="d-flex flex-lg-row flex-column mr-sm-4 rounded social-container" style="cursor:auto;">
+
+						<div class="pr-sm-4 mb-2 mb-xl-0 w-100">
+							<button onclick="window.location.href='https://www.instagram.com/arnuuuls/';" class="btn btn-xs btn-primary social-icon-navbar swft-used w-100">
+								<img src="images/social/instagram.svg" alt="Artstation">
+								<p>instagram</p>
+							</button>
+						</div>
+						<div class="pr-sm-4 mb-2 mb-xl-0 w-100">
+							<button onclick="window.location.href='https://www.artstation.com/arnuuls';" class="btn btn-xs btn-primary social-icon-navbar swft-used w-100">
+								<img src="images/social/artstation.svg" alt="Artstation">
+								<p>artstation</p>
+							</button>
+						</div>
+						<div class="pr-sm-4 mb-2 mb-xl-0 w-100">
+							<button onclick="window.location.href='https://sketchfab.com/arnuuls';" class="btn btn-xs btn-primary social-icon-navbar swft-used w-100">
+								<img src="images/social/sketchfab.svg" alt="Sketchfab">
+								<p>sketchfab</p>
+							</button>
+						</div>
+
+					  </li>
+
+					  <li class="mr-sm-4 rounded" onclick="window.location.href='mailto:webmaster@example.com';" style="cursor:pointer;">
+						<i class="ti-email sicon d-inline-block"></i>
+						<p class="paragraph-lg font-secondary">arnuuls@gmail.com</p>
+					  </li>
+
+					  <a href="images/about/<?php include 'php/dynamic_links.php'; echo $cvFileName; ?>" target="_blank">
+					  <li class="mr-sm-4 rounded" style="cursor:pointer;">
+                        <i class="ti-layout-list-thumb sicon d-inline-block"></i>
+						<p class="paragraph-lg font-secondary">Curriculum</p>
+					  </li>
+					  </a>
+					  <!-- /AboutInfo -->
+					</ul>
+				</div>
+			</div>
+			<!-- /Info-->
+			<!-- Social -->
+			<div class="col align-self-stretch">
+				<div class="col-12 w-100">
+					<h5 class="text-light">Support me</h5> 
+				</div>
+
+				<div class="d-flex flex-lg-row flex-column content-social mb-xl-5 mt-3">
+					<ul>
+					<!-- Ko-fi Support -->
+						<li>
+							<div class="w-100">
+								<button data-open-kofipopover  class="btn btn-xs btn-primary w-100" id="openKofiPopover" onclick="loadKofiProfileScript()">
+									<img src="https://storage.ko-fi.com/cdn/brandasset/logo_white_stroke.png?_gl=1*7hd2tt*_ga*MTgyMDEzNTIuMTcwOTk5ODE2Mg..*_ga_M13FZ7VQ2C*MTcwOTk5ODE2MS4xLjEuMTcwOTk5OTE3NS40Mi4wLjA." alt="kofi-logo" style="width:15rem;">
+								</button>
+								<dialog data-overlay class="rounded text-center p-0 kofiPopover shadow" id="kofiPopover">
+									<div data-modal class="bg-white rounded kofiPopover-inner hover-shadow">
+										<iframe src="https://ko-fi.com/arnuuls/?hidefeed=true&widget=true&embed=false&preview=false" class="rounded" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"vh";}(this));' style="height:80vh;width:100%;border:none;overflow:hidden;"></iframe>
+										<button data-close-kofipopover class="btn btn-transparent w-100" id="closeKofiPopover">Close</button>
+									</div>
+								</dialog>
+							</div>
+						</li>
+						<!-- /Ko-fi Support -->
+						<li>
+							<div class="w-100">
+
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Social -->
+		</div>
+		</div>
+	</div>
+	<div class="border-top text-center border-dark py-5">
+		<a href="https://github.com/arnuuls/arnuuls.github.io">
+			<p class="mb-0 text-light">Copyright ©
+				<script>var CurrentYear = new Date().getFullYear(); document.write(CurrentYear);</script>
+				repository on GitHub
+			</p>
+		</a>
+	</div>
 </footer>
 <!-- /footer -->
 
@@ -371,6 +578,51 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+<!-- Switcher Theme Script -->
+<script src="js/switchertheme.js"></script>
+
+<!-- Pop-up Script -->
+<script src="js/popupmodal.js"></script>
+
+<!-- Script schema -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@id": "https://arnuuls.github.io/#webpage",
+  "@type": "WebPage",
+  "url": "https://arnuuls.github.io/",
+  "name": "Arnuuls | Portfolio",
+  "description": "Hey my name is Arnau Morilla, I'm a Digital Artist.",
+  "author": { 
+    "@type": "Organization", 
+    "name": "Arnuuls"
+  },
+  "breadcrumb": { 
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home", 
+        "item": "https://arnuuls.github.io/index.html/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Portfolio",
+        "item": "https://arnuuls.github.io/portfolio.html/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Contact",
+        "item": "https://arnuuls.github.io/contact.html/"
+      }
+    ]
+  }
+}
+</script>
+<!-- /Script schema -->
 
 </body>
 </html>
